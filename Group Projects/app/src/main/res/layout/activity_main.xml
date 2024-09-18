@@ -22,12 +22,10 @@
             android:name="vn.edu.usth.groupproject.LikedSongsTitle"
             tools:layout="@layout/fragment_liked_songs" />
 
-        <fragment
+        <ListView
             android:id="@+id/song_list"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:name="vn.edu.usth.groupproject.SongsList"
-            tools:layout="@layout/fragment_songs_list" />
+            android:layout_height="wrap_content"/>
     </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
