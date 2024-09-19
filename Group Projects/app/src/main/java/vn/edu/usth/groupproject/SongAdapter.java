@@ -48,4 +48,3 @@ public class SongAdapter extends ArrayAdapter<SongData> {
         TextView artist;
     }
 }
-
