@@ -11,7 +11,6 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class SongAdapter extends ArrayAdapter<SongData> {
-
     private Context mContext;
 
     public SongAdapter(Context context, ArrayList<SongData> songs) {
@@ -31,6 +30,7 @@ public class SongAdapter extends ArrayAdapter<SongData> {
             holder.name = convertView.findViewById(R.id.song_title);
             holder.artist = convertView.findViewById(R.id.song_artist);
             convertView.setTag(holder);
+
         } else {
             holder = (ViewHolder) convertView.getTag();
         }

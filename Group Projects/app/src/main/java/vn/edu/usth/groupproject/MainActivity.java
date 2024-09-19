@@ -54,7 +54,8 @@ public class MainActivity extends AppCompatActivity {
     // Method to handle song selection
     private void selectSong(int position) {
         SongData selectedSong = songList.get(position);
-        // Implement your logic here to handle the selected song
+        // Handle the selected song
         System.out.println("Selected song: " + selectedSong.getSongName() + ", Artist: " + selectedSong.getArtist());
     }
+
 }
