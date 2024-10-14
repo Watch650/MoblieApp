@@ -3,17 +3,13 @@ package vn.edu.usth.groupproject;
 import android.content.Intent;
 import android.os.Bundle;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity implements RecyclerViewInterface{
+public class LikedSongLibraryActivity extends AppCompatActivity implements RecyclerViewInterface{
 
     ArrayList<SongModel> songModels = new ArrayList<>();
 
@@ -23,7 +19,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewInter
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_liked_song_page);
 
         RecyclerView recyclerView = findViewById(R.id.mRecycleView);
 
@@ -47,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewInter
 
     @Override
     public void onItemClick(int position) {
-        Intent intent = new Intent(MainActivity.this, SongActivity.class);
+        Intent intent = new Intent(LikedSongLibraryActivity.this, SongActivity.class);
 
         intent.putExtra("TITLE", songModels.get(position).getSongTitle());
         intent.putExtra("ARTIST", songModels.get(position).getSongArtist());
