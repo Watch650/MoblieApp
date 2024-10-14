@@ -1,5 +1,30 @@
 <resources>
     <string name="app_name">groupproject</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="song_titles">
+        <item>Back In Black</item>
+        <item>Dangerously</item>
+        <item>You Give Love A Bad Name</item>
+        <item>Back In Black</item>
+        <item>Back In Black</item>
+        <item>Back In Black</item>
+        <item>Back In Black</item>
+        <item>Back In Black</item>
+        <item>Back In Black</item>
+        <item>Back In Black</item>
+
+    </string-array>
+    <string-array name="song_artists">
+        <item>AC/DC</item>
+        <item>Charle Puth</item>
+        <item>Bon Jovi</item>
+        <item>AC/DC</item>
+        <item>AC/DC</item>
+        <item>AC/DC</item>
+        <item>AC/DC</item>
+        <item>AC/DC</item>
+        <item>AC/DC</item>
+        <item>AC/DC</item>
+    </string-array>
+
 </resources>
